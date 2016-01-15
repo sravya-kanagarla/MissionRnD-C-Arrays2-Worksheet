@@ -59,19 +59,17 @@ struct transaction * mergeSortedArrays(struct transaction *A, int ALen, struct t
 			CIndex++;
 			AIndex++;
 			C[CIndex] = B[BIndex];
-			CIndex++;
 			BIndex++;
 		}
 		else if (compare == 1) {
 			C[CIndex] = A[AIndex];
-			CIndex++;
 			AIndex++;
 		}
 		else {
 			C[CIndex] = B[BIndex];
-			CIndex++;
 			BIndex++;
 		}
+		CIndex++;
 	}
 	while (AIndex < ALen) {
 		C[CIndex] = A[AIndex];

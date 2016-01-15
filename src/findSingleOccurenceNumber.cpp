@@ -22,7 +22,7 @@ struct node {
 };
 
 int findSingleOccurenceNumber(int *A, int len) {
-	if (A == NULL)
+	/*if (A == NULL)
 		return -1;
 	int i;
 	struct node *heads[10];
@@ -56,6 +56,6 @@ int findSingleOccurenceNumber(int *A, int len) {
 		}
 		if (iter != NULL && iter->count == 1)
 			return iter->value;
-	}
+	}*/
 	return -1;
 }
